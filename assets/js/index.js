@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to create a card for a book
     function createBookCard(book) {
         let cardDiv = document.createElement('div');
-        cardDiv.classList.add('col-md-4', 'left', 'm-3', 'p-3', 'cardbook');
+        cardDiv.classList.add('col-md-4', 'left', 'm-3', 'pt-3', 'cardbook');
         let formGroupDiv = document.createElement('div');
         formGroupDiv.classList.add('form-group');
 
@@ -88,23 +88,23 @@ document.addEventListener('DOMContentLoaded', function() {
         authorInput.setAttribute('readonly', true);
 
         let descriptionTextarea = document.createElement('textarea');
-        descriptionTextarea.setAttribute('class', 'form-control mb-2');
+        descriptionTextarea.setAttribute('class', 'form-control ');
         descriptionTextarea.setAttribute('readonly', true);
         descriptionTextarea.textContent = book.description; 
 
-        let editButton = document.createElement('button');
-        editButton.setAttribute('class', 'btn btn-primary btn-block m-2');
-        editButton.textContent = 'Edit book';
+        // let editButton = document.createElement('button');
+        // editButton.setAttribute('class', 'btn btn-primary btn-block m-2');
+        // editButton.textContent = 'Edit book';
 
-        let deleteButton = document.createElement('button');
-        deleteButton.setAttribute('class', 'btn btn-primary btn-block');
-        deleteButton.textContent = 'Remove book';
+        // let deleteButton = document.createElement('button');
+        // deleteButton.setAttribute('class', 'btn btn-primary btn-block');
+        // deleteButton.textContent = 'Remove book';
 
         formGroupDiv.appendChild(titleInput);
         formGroupDiv.appendChild(authorInput);
         formGroupDiv.appendChild(descriptionTextarea);
-        formGroupDiv.appendChild(editButton);
-        formGroupDiv.appendChild(deleteButton);
+        // formGroupDiv.appendChild(editButton);
+        // formGroupDiv.appendChild(deleteButton);
 
         cardDiv.appendChild(formGroupDiv);
 
